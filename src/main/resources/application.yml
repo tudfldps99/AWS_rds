@@ -1,0 +1,19 @@
+
+spring:
+  # database connection
+  datasource:
+    url: jdbc:mariadb://practice-database.cyeqzgo8kpvc.ap-northeast-2.rds.amazonaws.com:3306/hellodb
+    username: root
+    password: abc1234!
+
+  # jpa config
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MariaDB106Dialect    # ?? ??
+    show-sql: true          # ???? SQL? ??? ? ???
+    hibernate:
+      database: mysql       # ????? dbms ??
+      generate-ddl: true    # ? DBMS? ?? ?? ??? ??? ?? ??
+      ddl-auto: create      # DDL?? ??? ? ??
