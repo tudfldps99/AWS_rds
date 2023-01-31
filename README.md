@@ -2,7 +2,13 @@
 
 ### MariaDB 연결
 
-datasource:
-url: jdbc:mariadb://practice-database.cyeqzgo8kpvc.ap-northeast-2.rds.amazonaws.com:3306/hellodb
-username: root
-password: abc1234!
+url: 엔드포인트 이용
+
+---
+
+### DB 한글 설정 변경
+```
+alter database hellodb
+character set = 'utf8mb4'
+collate = 'utf8mb4_general_ci';
+```
